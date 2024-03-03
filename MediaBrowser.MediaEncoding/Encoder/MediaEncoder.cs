@@ -241,7 +241,7 @@ namespace MediaBrowser.MediaEncoding.Encoder
         {
             var config = _configurationManager.GetEncodingOptions();
 
-            // Filesystem may not be case insensitive, but EncoderAppPathDisplay should always point to a valid file?
+            // Filesystem may not be case-insensitive, but EncoderAppPathDisplay should always point to a valid file?
             if (string.IsNullOrEmpty(config.EncoderAppPath)
                 && string.Equals(config.EncoderAppPathDisplay, path, StringComparison.OrdinalIgnoreCase))
             {
