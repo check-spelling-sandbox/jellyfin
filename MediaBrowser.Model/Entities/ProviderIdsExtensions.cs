@@ -11,7 +11,7 @@ namespace MediaBrowser.Model.Entities;
 public static class ProviderIdsExtensions
 {
     /// <summary>
-    /// Case insensitive dictionary of <see cref="MetadataProvider"/> string representation.
+    /// Case-insensitive dictionary of <see cref="MetadataProvider"/> string representation.
     /// </summary>
     private static readonly Dictionary<string, string> _metadataProviderEnumDictionary =
         Enum.GetValues<MetadataProvider>()
