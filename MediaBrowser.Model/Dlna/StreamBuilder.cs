@@ -1349,7 +1349,7 @@ namespace MediaBrowser.Model.Dlna
         /// <param name="playMethod">The <see cref="PlayMethod"/>.</param>
         /// <param name="transcoderSupport">The <see cref="ITranscoderSupport"/>.</param>
         /// <param name="outputContainer">The output container.</param>
-        /// <param name="transcodingSubProtocol">The subtitle transoding protocol.</param>
+        /// <param name="transcodingSubProtocol">The subtitle transcoding protocol.</param>
         /// <returns>The the normalized input container.</returns>
         public static SubtitleProfile GetSubtitleProfile(
             MediaSourceInfo mediaSource,
