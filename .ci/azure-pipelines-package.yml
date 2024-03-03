@@ -32,9 +32,9 @@ jobs:
         BuildConfiguration: linux.armhf
       Windows.amd64:
         BuildConfiguration: windows.amd64
-      MacOS.amd64:
+      macOS.amd64:
         BuildConfiguration: macos.amd64
-      MacOS.arm64:
+      macOS.arm64:
         BuildConfiguration: macos.arm64
       Portable:
         BuildConfiguration: portable
