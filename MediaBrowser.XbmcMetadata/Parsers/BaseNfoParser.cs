@@ -658,7 +658,7 @@ namespace MediaBrowser.XbmcMetadata.Parsers
                 }
 
                 var fileSystemMetadata = _directoryService.GetFile(val);
-                // non existing file returns null
+                // nonexistent file returns null
                 if (fileSystemMetadata is null || !fileSystemMetadata.Exists)
                 {
                     Logger.LogWarning("Artwork file {Path} specified in nfo file for {ItemName} does not exist.", uri, itemResult.Item.Name);

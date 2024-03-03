@@ -16,7 +16,7 @@ public class SessionControllerTests : IClassFixture<JellyfinApplicationFactory>
     }
 
     [Fact]
-    public async Task GetSessions_NonExistentUserId_NotFound()
+    public async Task GetSessions_NonexistentUserId_NotFound()
     {
         var client = _factory.CreateClient();
         client.DefaultRequestHeaders.AddAuthHeader(_accessToken ??= await AuthHelper.CompleteStartupAsync(client));
