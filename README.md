@@ -166,7 +166,7 @@ This creates a container that has everything to run and debug the Jellyfin Media
 > Keep in mind that as this has no web client you have to connect to it via an extenal client. This can be just another codespace container running the WebUI. vuejs does not work from the getgo as it does not support the setup steps.
 
 #### Development Jellyfin Server ffmpeg
-this extens the default server with an default installation of ffmpeg6 though the means described here: https://jellyfin.org/docs/general/installation/linux#repository-manual
+this extends the default server with an default installation of ffmpeg6 though the means described here: https://jellyfin.org/docs/general/installation/linux#repository-manual
 If you want to install a specific ffmpeg version, follow the comments embedded in the `.devcontainer/Dev - Server Ffmpeg/install.ffmpeg.sh` file.
 
 Use the `ghcs .NET Launch (nowebclient, ffmpeg)` launch config to run with the jellyfin-ffmpeg enabled.
