@@ -116,7 +116,7 @@ echo -e "%changelog
 * $( LANG=C date '+%a %b %d %Y' ) Jellyfin Packaging Team <packaging@jellyfin.org>
 - New upstream version ${new_version}; release changelog at https://github.com/jellyfin/jellyfin/releases/tag/v${new_version}" >> ${fedora_changelog_temp}
 cat xx01 >> ${fedora_changelog_temp}
-# Reassembble
+# Reassemble
 cat xx00 ${fedora_changelog_temp} > ${fedora_spec_temp}
 popd
 # Move into place
