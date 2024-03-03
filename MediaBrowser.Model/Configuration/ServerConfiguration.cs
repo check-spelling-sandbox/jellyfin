@@ -256,7 +256,7 @@ public class ServerConfiguration : BaseApplicationConfiguration
     public bool AllowClientLogUpload { get; set; } = true;
 
     /// <summary>
-    /// Gets or sets the dummy chapter duration in seconds, use 0 (zero) or less to disable generation alltogether.
+    /// Gets or sets the dummy chapter duration in seconds, use 0 (zero) or less to disable generation altogether.
     /// </summary>
     /// <value>The dummy chapters duration.</value>
     public int DummyChapterDuration { get; set; }
