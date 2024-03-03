@@ -73,7 +73,7 @@ namespace MediaBrowser.XbmcMetadata.Parsers
         protected IProviderManager ProviderManager { get; }
 
         /// <summary>
-        /// Gets a value indicating whether URLs after a closing XML tag are supporrted.
+        /// Gets a value indicating whether URLs after a closing XML tag are supported.
         /// </summary>
         protected virtual bool SupportsUrlAfterClosingXmlTag => false;
 
