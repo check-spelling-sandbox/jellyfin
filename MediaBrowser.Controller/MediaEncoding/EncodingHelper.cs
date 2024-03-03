@@ -3416,7 +3416,7 @@ namespace MediaBrowser.Controller.MediaEncoding
             mainFilters.Add(swScaleFilter);
             mainFilters.Add("format=" + outFormat);
 
-            // sw tonemap <= TODO: finsh the fast tonemap filter
+            // sw tonemap <= TODO: finish the fast tonemap filter
 
             // OUTPUT yuv420p/nv12 surface(memory)
 
@@ -3733,7 +3733,7 @@ namespace MediaBrowser.Controller.MediaEncoding
                 // map from d3d11va to opencl via d3d11-opencl interop.
                 mainFilters.Add("hwmap=derive_device=opencl");
 
-                // hw deint <= TODO: finsh the 'yadif_opencl' filter
+                // hw deint <= TODO: finish the 'yadif_opencl' filter
 
                 var outFormat = doOclTonemap ? string.Empty : "nv12";
                 var hwScaleFilter = GetHwScaleFilter("opencl", outFormat, inW, inH, reqW, reqH, reqMaxW, reqMaxH);
