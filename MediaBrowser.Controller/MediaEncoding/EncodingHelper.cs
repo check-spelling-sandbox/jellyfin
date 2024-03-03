@@ -3901,7 +3901,7 @@ namespace MediaBrowser.Controller.MediaEncoding
                 // map from d3d11va to opencl via d3d11-opencl interop.
                 mainFilters.Add("hwmap=derive_device=opencl:mode=read");
 
-                // hw deint <= TODO: finsh the 'yadif_opencl' filter
+                // hw deint <= TODO: finish the 'yadif_opencl' filter
 
                 // hw transpose
                 if (doOclTranspose)
