@@ -631,7 +631,7 @@ namespace MediaBrowser.Controller.MediaEncoding
         {
             if (string.IsNullOrWhiteSpace(container))
             {
-                // this may not work, but if the client is that broken we can not do anything better
+                // this may not work, but if the client is that broken we cannot do anything better
                 return "aac";
             }
 

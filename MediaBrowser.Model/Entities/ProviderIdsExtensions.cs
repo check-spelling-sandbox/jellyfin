@@ -107,7 +107,7 @@ public static class ProviderIdsExtensions
     /// <param name="instance">The instance.</param>
     /// <param name="name">The name, this should not contain a '=' character.</param>
     /// <param name="value">The value.</param>
-    /// <remarks>Due to how deserialization from the database works the name can not contain '='.</remarks>
+    /// <remarks>Due to how deserialization from the database works the name cannot contain '='.</remarks>
     /// <returns><c>true</c> if the provider id got set successfully; otherwise, <c>false</c>.</returns>
     public static bool TrySetProviderId(this IHasProviderIds instance, string? name, string? value)
     {
@@ -153,7 +153,7 @@ public static class ProviderIdsExtensions
     /// <param name="instance">The instance.</param>
     /// <param name="name">The name, this should not contain a '=' character.</param>
     /// <param name="value">The value.</param>
-    /// <remarks>Due to how deserialization from the database works the name can not contain '='.</remarks>
+    /// <remarks>Due to how deserialization from the database works the name cannot contain '='.</remarks>
     public static void SetProviderId(this IHasProviderIds instance, string name, string value)
     {
         ArgumentNullException.ThrowIfNull(instance);
