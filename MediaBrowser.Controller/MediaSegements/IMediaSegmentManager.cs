@@ -46,7 +46,7 @@ public interface IMediaSegmentManager
     Task DeleteSegmentAsync(Guid segmentId);
 
     /// <summary>
-    /// Obtains all segments accociated with the itemId.
+    /// Obtains all segments associated with the itemId.
     /// </summary>
     /// <param name="itemId">The id of the <see cref="BaseItem"/>.</param>
     /// <param name="typeFilter">filteres all media segments of the given type to be included. If null all types are included.</param>
@@ -55,7 +55,7 @@ public interface IMediaSegmentManager
     Task<IEnumerable<MediaSegmentDto>> GetSegmentsAsync(Guid itemId, IEnumerable<MediaSegmentType>? typeFilter, bool filterByProvider = true);
 
     /// <summary>
-    /// Obtains all segments accociated with the itemId.
+    /// Obtains all segments associated with the itemId.
     /// </summary>
     /// <param name="item">The <see cref="BaseItem"/>.</param>
     /// <param name="typeFilter">filteres all media segments of the given type to be included. If null all types are included.</param>
