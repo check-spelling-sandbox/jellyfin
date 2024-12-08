@@ -109,7 +109,7 @@ public interface IDeviceManager
     DeviceOptionsDto? GetDeviceOptions(string deviceId);
 
     /// <summary>
-    /// Gets the dto for client capabilites.
+    /// Gets the dto for client capabilities.
     /// </summary>
     /// <param name="capabilities">The client capabilities.</param>
     /// <returns><see cref="ClientCapabilitiesDto"/> of the device.</returns>
