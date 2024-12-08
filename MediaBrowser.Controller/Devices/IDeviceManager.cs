@@ -58,7 +58,7 @@ public interface IDeviceManager
     QueryResult<Device> GetDevices(DeviceQuery query);
 
     /// <summary>
-    /// Gets device infromation based on the provided query.
+    /// Gets device information based on the provided query.
     /// </summary>
     /// <param name="query">The device query.</param>
     /// <returns>A <see cref="Task{QueryResult}"/> representing the retrieval of the device information.</returns>
