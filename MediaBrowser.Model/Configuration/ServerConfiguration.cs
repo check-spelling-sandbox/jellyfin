@@ -83,9 +83,9 @@ public class ServerConfiguration : BaseApplicationConfiguration
     public bool QuickConnectAvailable { get; set; } = true;
 
     /// <summary>
-    /// Gets or sets a value indicating whether [enable case sensitive item ids].
+    /// Gets or sets a value indicating whether [enable case-sensitive item ids].
     /// </summary>
-    /// <value><c>true</c> if [enable case sensitive item ids]; otherwise, <c>false</c>.</value>
+    /// <value><c>true</c> if [enable case-sensitive item ids]; otherwise, <c>false</c>.</value>
     public bool EnableCaseSensitiveItemIds { get; set; } = true;
 
     public bool DisableLiveTvChannelUserDataName { get; set; } = true;
@@ -249,7 +249,7 @@ public class ServerConfiguration : BaseApplicationConfiguration
     public bool AllowClientLogUpload { get; set; } = true;
 
     /// <summary>
-    /// Gets or sets the dummy chapter duration in seconds, use 0 (zero) or less to disable generation alltogether.
+    /// Gets or sets the dummy chapter duration in seconds, use 0 (zero) or less to disable generation altogether.
     /// </summary>
     /// <value>The dummy chapters duration.</value>
     public int DummyChapterDuration { get; set; }
@@ -276,4 +276,9 @@ public class ServerConfiguration : BaseApplicationConfiguration
     /// </summary>
     /// <value>The trickplay options.</value>
     public TrickplayOptions TrickplayOptions { get; set; } = new TrickplayOptions();
+
+    /// <summary>
+    /// Gets or sets a value indicating whether old authorization methods are allowed.
+    /// </summary>
+    public bool EnableLegacyAuthorization { get; set; } = true;
 }

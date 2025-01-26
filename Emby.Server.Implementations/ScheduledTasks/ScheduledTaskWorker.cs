@@ -27,7 +27,7 @@ namespace Emby.Server.Implementations.ScheduledTasks
         private readonly IApplicationPaths _applicationPaths;
         private readonly ILogger _logger;
         private readonly ITaskManager _taskManager;
-        private readonly object _lastExecutionResultSyncLock = new();
+        private readonly Lock _lastExecutionResultSyncLock = new();
         private bool _readFromFile;
         private TaskResult _lastExecutionResult;
         private Task _currentTask;
@@ -543,7 +543,7 @@ namespace Emby.Server.Implementations.ScheduledTasks
             {
                 DisposeTriggers();
 
-                var wassRunning = State == TaskState.Running;
+                var wasRunning = State == TaskState.Running;
                 var startTime = CurrentExecutionStartTime;
 
                 var token = CurrentCancellationTokenSource;
@@ -596,7 +596,7 @@ namespace Emby.Server.Implementations.ScheduledTasks
                     }
                 }
 
-                if (wassRunning)
+                if (wasRunning)
                 {
                     OnTaskCompleted(startTime, DateTime.UtcNow, TaskCompletionStatus.Aborted, null);
                 }
